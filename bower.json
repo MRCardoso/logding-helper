@@ -3,7 +3,7 @@
 	"version": "0.0.7",
 	"description": "my own modules to help in ionic develop",
 	"main": [
-		"dist/logding-helper.min.js"
+		"dist/logding-helper.js"
 	],
 	"keywords": [
 		"log",
