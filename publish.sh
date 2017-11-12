@@ -49,7 +49,7 @@ then
         git add "$addStr" && 
         git commit -m "$commitStr" && 
         git tag "$newTag" && 
-        git push orgin $repositoryStr --tags
+        git push origin $repositoryStr --tags
     else
         echo -e "\nFinish----------------------\n"
     fi

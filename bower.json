@@ -1,9 +1,10 @@
 {
 	"name": "logding-helper",
-	"version": "0.0.7",
+	"version": "0.2.1",
 	"description": "my own modules to help in ionic develop",
 	"main": [
-		"dist/logding-helper.js"
+		"dist/js/logding-helper.js",
+		"dist/css/logding-helper.css"
 	],
 	"keywords": [
 		"log",
