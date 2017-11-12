@@ -1,4 +1,5 @@
-angular.module('logding.helper').factory('Loading', ['$ionicLoading', function($ionicLoading){
+angular.module('logding.helper')
+.factory('Loading', ['$ionicLoading', function($ionicLoading){
     function show(){
         return $ionicLoading.show({
             // template: '<p>Loading...</p><ion-spinner icon="dots"></ion-spinner>',

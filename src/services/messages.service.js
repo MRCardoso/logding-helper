@@ -1,4 +1,5 @@
-angular.module('logding.helper').factory('messageBox', ["$rootScope", "$ionicPopup", function($rootScope, $ionicPopup)
+angular.module('logding.helper')
+.factory('messageBox', ["$rootScope", "$ionicPopup", function($rootScope, $ionicPopup)
 {
 	var boxConfirm = null;
 	

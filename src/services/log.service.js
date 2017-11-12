@@ -1,4 +1,5 @@
-angular.module('logding.helper').factory('Log', function(){
+angular.module('logding.helper')
+.factory('Log', [function(){
     function info(string, data, activate){
         activate = (angular.isUndefined(activate) ? true : activate);
         if( activate ){
@@ -36,4 +37,4 @@ angular.module('logding.helper').factory('Log', function(){
         success: success,
         DBException: DBException
     }
-});
+}]);

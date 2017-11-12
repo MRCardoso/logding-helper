@@ -9,7 +9,22 @@
         .run(["$rootScope", function($rootScope){
         }]);
 }());
-angular.module('logding.helper').factory('Loading', ['$ionicLoading', function($ionicLoading){
+angular.module('logding.helper')
+.directive('mousewheel', function($rootScope){
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs){
+            element.bind('mousewheel', function(event){
+                scope.width += event.wheelDeltaX;
+                scope.height += event.wheelDeltaY;
+                scope.$digest();
+            })
+        }
+    }
+})
+
+angular.module('logding.helper')
+.factory('Loading', ['$ionicLoading', function($ionicLoading){
     function show(){
         return $ionicLoading.show({
             // template: '<p>Loading...</p><ion-spinner icon="dots"></ion-spinner>',
@@ -25,7 +40,8 @@ angular.module('logding.helper').factory('Loading', ['$ionicLoading', function($
         hide: hide
     }
 }])
-angular.module('logding.helper').factory('Log', function(){
+angular.module('logding.helper')
+.factory('Log', [function(){
     function info(string, data, activate){
         activate = (angular.isUndefined(activate) ? true : activate);
         if( activate ){
@@ -63,8 +79,9 @@ angular.module('logding.helper').factory('Log', function(){
         success: success,
         DBException: DBException
     }
-});
-angular.module('logding.helper').factory('messageBox', ["$rootScope", "$ionicPopup", function($rootScope, $ionicPopup)
+}]);
+angular.module('logding.helper')
+.factory('messageBox', ["$rootScope", "$ionicPopup", function($rootScope, $ionicPopup)
 {
 	var boxConfirm = null;
 	
