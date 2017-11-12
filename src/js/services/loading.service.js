@@ -14,4 +14,4 @@ angular.module('logding.helper')
         show: show,
         hide: hide
     }
-}])
+}]);

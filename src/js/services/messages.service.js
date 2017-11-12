@@ -52,4 +52,4 @@ angular.module('logding.helper')
 		alert: alert,
 		confirm: confirm
 	};
-}])
+}]);

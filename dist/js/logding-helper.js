@@ -10,7 +10,7 @@
         }]);
 }());
 angular.module('logding.helper')
-.directive('mousewheel', function($rootScope){
+.directive('mousewheel', ["$rootScope", function($rootScope){
     return {
         restrict: 'A',
         link: function(scope, element, attrs){
@@ -21,8 +21,7 @@ angular.module('logding.helper')
             })
         }
     }
-})
-
+}]);
 angular.module('logding.helper')
 .factory('Loading', ['$ionicLoading', function($ionicLoading){
     function show(){
@@ -39,7 +38,7 @@ angular.module('logding.helper')
         show: show,
         hide: hide
     }
-}])
+}]);
 angular.module('logding.helper')
 .factory('Log', [function(){
     function info(string, data, activate){
@@ -134,4 +133,4 @@ angular.module('logding.helper')
 		alert: alert,
 		confirm: confirm
 	};
-}])
+}]);

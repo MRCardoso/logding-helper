@@ -3,12 +3,12 @@
 | REQUIRED  
 | --------------------------------------------------------------------
 */
-var gulp = require('gulp'),
-    uglify = require('gulp-uglify'),
-    rename = require('gulp-rename'),
-    concat       = require('gulp-concat'),
-    minifyCss    = require('gulp-minify-css'),
-    clean       = require('gulp-clean');
+const gulp = require('gulp');
+const uglify = require('gulp-uglify');
+const rename = require('gulp-rename');
+const concat       = require('gulp-concat');
+const minifyCss    = require('gulp-minify-css');
+const clean       = require('gulp-clean');
 
 /*
 | --------------------------------------------------------------------
