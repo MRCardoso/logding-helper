@@ -1,5 +1,5 @@
 logding-helper.json
-create.sh
-publish.sh
+repo-create.sh
+bower-publish.sh
 node_modules/
 public/bower_components/
