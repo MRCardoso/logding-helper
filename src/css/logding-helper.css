@@ -109,3 +109,14 @@
     background-color: #6E9FDD !important;
     border: none
 }
+.tabs-striped.tabs-background-blue .tabs {
+    background-color: #3E7FAD !important;    
+    color: #FFF8F2 !important;
+    background-image: none; 
+}
+.tabs-background-blue .tabs,
+.tabs-background-blue > .tabs {
+    background-color: #3E7FAD;
+    background-image: linear-gradient(0deg, #6E9FDD, #6E9FDD 50%, transparent 50%);
+    border-color: #6E9FDD;     
+}
