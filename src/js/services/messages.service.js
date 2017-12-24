@@ -13,7 +13,7 @@ angular.module('logding.helper')
 		if( buttons != undefined ){
 			params.buttons = buttons;
 		}
-		$ionicPopup.alert(params);
+		return $ionicPopup.alert(params);
 	};
 
 	function confirm(config, $scope)
@@ -46,10 +46,28 @@ angular.module('logding.helper')
 				]
 			});
 		}
+		return boxConfirm;
 	};
+
+	function show(config, $scope)
+	{
+		var params = {
+			template: $scope.tmpl || config.message || "Display Data",
+			title: $scope.ttl || config.title || "Display Data",
+			scope: $scope,
+		};
+		if(config.subTitle != undefined){
+			params.subTitle = config.subTitle;
+		}
+		if( config.buttons != undefined ){
+			params.buttons = config.buttons;
+		}
+		return $ionicPopup.show(params);
+	}
 
 	return {
 		alert: alert,
+		show: show,
 		confirm: confirm
 	};
 }]);
