@@ -67,7 +67,7 @@ angular.module('logding.helper')
 
 	return {
 		alert: alert,
-		show: show,
-		confirm: confirm
+		confirm: confirm,
+		show: show
 	};
 }]);
